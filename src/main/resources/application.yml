@@ -1,0 +1,19 @@
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      base-path: /aazaa
+      exposure:
+        include: ['prometheus']
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+
+spring:
+  application:
+    name: spring-micrometer
+
